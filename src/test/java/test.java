@@ -8,8 +8,13 @@ public class test {
   private Tennis tennis;
 
   @BeforeEach
-  void name() {
+  void setUp() {
     tennis = new Tennis("tom", "jerry");
+  }
+
+  @Test
+  void name() {
+    System.out.println("hello world");
   }
 
   @Test
@@ -88,6 +93,8 @@ public class test {
 
     Assertions.assertEquals("forty thirty", tennis.score());
   }
+
+
 
   private void addSecondPlayer(int num) {
     for (int i = 0; i < num; i++) {
