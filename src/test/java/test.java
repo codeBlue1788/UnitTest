@@ -82,6 +82,7 @@ public class test {
   @Test
   void tom_win_4_0() {
     addFirstPlayerScore(4);
+    addFirstPlayerScore(4);
 
     Assertions.assertEquals("tom win", tennis.score());
   }
